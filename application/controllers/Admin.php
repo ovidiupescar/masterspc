@@ -139,7 +139,7 @@ class Admin extends CI_Controller{
             $this->referinte->data = time();
             $this->referinte->userid = 1;
             
-            echo '<tt><pre>'.var_export($this->referinte, True).'</pre></tt>';
+            //echo '<tt><pre>'.var_export($this->referinte, True).'</pre></tt>';
             
             $this->referinte->insert();
             
