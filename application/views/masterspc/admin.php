@@ -25,7 +25,7 @@
 
         </table>
         <br>
-        <a href="<?php echo base_url('index.php/admin/createPartNo')?>">New Order</a>
+        <a href="<?php echo base_url('index.php/admin/createPartNo')?>"><button type="button" class="btn btn-default">Add new order</button></a>
     </div>
 
 <script src="<?php echo base_url('assets/jquery/jquery-3.1.1.js')?>"></script>

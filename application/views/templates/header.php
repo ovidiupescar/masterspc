@@ -50,7 +50,7 @@
  
 <div class='container'>
  <div class='jumbotron'>
- <h1>Master SPC sheet</h1>
+ <h1 style="font-size:35pt">Master SPC sheet</h1>
 
 <br />
 <div class='btn-group btn-group-justified'>
