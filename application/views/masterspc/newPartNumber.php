@@ -3,7 +3,7 @@
 </div>
 <div>
     <br /><br />
-    <div class="well"><h4>Add new part number and critical dimensions!</h4></div>
+    <div class="well"><h1 style="font-size:15pt">Add new part number and critical dimensions!</h1></div>
 
 <form action='admin/createPartNo' method='post'>
   <div class=‘form-group'>
