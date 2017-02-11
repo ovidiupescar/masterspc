@@ -2,6 +2,9 @@
 <?php echo validation_errors(); ?>
 </div>
 <div>
+    <br /><br />
+    <div class="well"><h4>Add new part number and critical dimensions!</h4></div>
+
 <form action='admin/createPartNo' method='post'>
   <div class=‘form-group'>
     <label for=‘partNo’>Part number:</label>
