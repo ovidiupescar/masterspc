@@ -143,7 +143,7 @@ class Admin extends CI_Controller{
             
             $this->referinte->save();
             
-            echo $this->viewPartNo($this->referinte->partNo);
+            $this->viewPartNo($this->referinte->partNo);
             
             //$this->index();
         }
