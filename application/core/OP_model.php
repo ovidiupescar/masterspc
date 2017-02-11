@@ -79,7 +79,7 @@ class OP_model extends CI_Model {
      * Save the record.
      */
     public function save(){
-        if (isset($this->{$this::DB_TABLE_PK})) {
+        if ($this->{$this::DB_TABLE_PK}) {
             $this->update();
         }
         else {
