@@ -50,6 +50,12 @@ class Afisare extends CI_Controller {
         $this->load->view('masterspc/home');
         $this->load->view('templates/footer');
     }
+    public function neworder() {
+        
+        $this->load->view('templates/header');
+        $this->load->view('masterspc/neworder');
+        $this->load->view('templates/footer');
+    }
 }
 
 

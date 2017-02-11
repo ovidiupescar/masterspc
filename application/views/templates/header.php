@@ -54,9 +54,9 @@
 
 <br />
 <div class='btn-group btn-group-justified'>
-<a href='index.php' class='btn btn-default' role='button'>Home</a>
-<a href='new-order.php' class='btn btn-primary' role='button'>Add new order</a>
+<a href='<?php echo base_url('index.php/afisare/home')?>' class='btn btn-default' role='button'>Home</a>
+<a href='<?php echo base_url('index.php/afisare/neworder')?>' class='btn btn-primary' role='button'>Add new order</a>
 <a href='orders.php' class='btn btn-success' role='button'>Record orders</a>
 <a href='order-history.php' class='btn btn-warning' role='button'>History</a>
-<a href='settings.php' class='btn btn-info' role='button'>Admin</a>
+<a href='<?php echo base_url('index.php/admin/index')?>' class='btn btn-info' role='button'>Admin</a>
 </div>
