@@ -30,7 +30,6 @@ class OP_model extends CI_Model {
      * Create record
      */
     private function insert() {
-        $this->db->insert($this::DB_TABLE,$this);
         $this->{$this::DB_TABLE_PK} = $this->db->insert_id();
     }
     
@@ -79,12 +78,14 @@ class OP_model extends CI_Model {
      * Save the record.
      */
     public function save(){
-        if (isset($this->{$this::DB_TABLE_PK})) {
+        if (!isset($this->{$this::DB_TABLE_PK})) {
             $this->update();
         }
         else {
             $this->insert();
         }
+        
+        
     }
     
     /**
