@@ -32,7 +32,8 @@
     echo form_label('Minus Tol', 'tol_minus2');
     echo form_input('tol_minus2');
     echo '<br>';
-    
+    echo 'flo ii tata lor';
+    echo '<br />';
     echo form_submit('submit', 'Create the Part Number');
 
     echo form_close();
