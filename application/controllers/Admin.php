@@ -141,11 +141,11 @@ class Admin extends CI_Controller{
             
             //echo '<tt><pre>'.var_export($this->referinte, True).'</pre></tt>';
             
-            $this->referinte->insert();
+            $this->referinte->save();
             
-            $this->load->view('templates/header');
-           // $this->load->view('masterspc/admin');
-            $this->load->view('templates/footer');
+            echo $this->referinte->partNo;
+            
+            //$this->index();
         }
 
     }
