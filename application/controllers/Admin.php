@@ -124,6 +124,7 @@ class Admin extends CI_Controller{
         else
         {   
             $this->load->model('Referinte_model','referinte');
+            $this->load->model('Referinte_model','verifica');
             
             $this->referinte->partNo = $this->input->post('partNo');
             $this->referinte->customer = $this->input->post('customer');
@@ -138,11 +139,24 @@ class Admin extends CI_Controller{
             
             $this->referinte->data = time();
             $this->referinte->userid = 1;
-                        
-            $this->referinte->save();
             
-            $this->viewPartNo($this->referinte->partNo);
+            //echo '<tt><pre>'.var_export($this->referinte, True).'</pre></tt>';
             
+            $this->verifica->load($this->referinte->partNo);
+            
+            if(isset($this->verifica->partNo))
+            {
+                $this->load->view('templates/header');
+                echo "This partnumber already exists";
+                $this->load->view('templates/footer');
+
+            }
+            else
+            {
+                $this->referinte->save();
+                $this->viewPartNo($this->input->post('partNo'));
+
+            }
         }
 
     }
