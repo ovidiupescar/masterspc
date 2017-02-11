@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'codeigniter_masterspc',
+	'hostname' => 'master-spc.premiumstickers.co',
+	'username' => 'decorsfu_ahile07',
+	'password' => 'braveheart07',
+	'database' => 'decorsfu_codeigniter',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
