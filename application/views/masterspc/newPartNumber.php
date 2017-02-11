@@ -2,41 +2,47 @@
 <?php echo validation_errors(); ?>
 </div>
 <div>
-<?php
-    echo form_open('admin/createPartNo');
-    
-    echo '<br>';
-    echo form_label('Part Number:', 'partNo');
-    echo form_input('partNo');
-    echo '<br>';
-    echo form_label('Customer:', 'customer');   
-    echo form_input('customer');
-    echo '<br>';
-    echo form_label('Material:', 'material');
-    echo form_input('material');
-    echo '<br>';
-    echo form_label('Thickness:', 'thickness');
-    echo form_input('thickness');
-    echo '<br>';
-    echo form_label('1st Dimension', 'dim1');
-    echo form_input('dim1');
-    echo form_label('Plus Tol', 'tol_plus1');
-    echo form_input('tol_plus1');
-    echo form_label('Minus Tol', 'tol_minus1');
-    echo form_input('tol_minus1');
-    echo '<br>';
-    echo form_label('2nd Dimension', 'dim2');
-    echo form_input('dim2');
-    echo form_label('Plus Tol', 'tol_plus2');
-    echo form_input('tol_plus2');
-    echo form_label('Minus Tol', 'tol_minus2');
-    echo form_input('tol_minus2');
-    echo '<br>';
-    
-    echo form_submit('submit', 'Create the Part Number');
+    <br /><br />
+    <div class="well"><h4>Add new part number and critical dimensions!</h4></div>
 
-    echo form_close();
-?>
+<form action='admin/createPartNo' method='post'>
+  <div class=‘form-group'>
+    <label for=‘partNo’>Part number:</label>
+    <input type=‘text’ class='form-control' id='partNo'>
+<br />
+    <label for=‘customer’>Customer:</label>
+    <input type=‘text’ class='form-control' id=‘customer’>
+<br />
+    <label for=‘material’>Material:</label>
+    <input type='text' class='form-control' id=‘material’>
+<br />
+    <label for=‘thickness’>Thickness (mm):</label>
+    <input type='text' class='form-control' id='thickness'>
+<br />
+    <label for=‘dim1’>CTQ 1 (mm):</label>
+    <input type='text' class='form-control' id=‘dim1’>
+<br />
+    <label for=‘tol_plus1’>+ tolerance (mm):</label>
+    <input type='text' class='form-control' id='tol_plus1'>
+<br />
+    <label for=‘tol_minus1’>- tolerance (mm):</label>
+    <input type='text' class='form-control' id='tol_minus1'>
+<br />
+    <label for=‘dim2’>CTQ 2 (mm):</label>
+    <input type='text' class='form-control' id=‘dim2’>
+<br />
+    <label for=‘tol_plus2’>+ tolerance (mm):</label>
+    <input type='text' class='form-control' id='tol_plus2'>
+<br />
+    <label for=‘tol_minus2’>- tolerance (mm):</label>
+    <input type='text' class='form-control' id='tol_minus2'>
+  </div>
+<br />
+
+
+  <button type='submit' class='btn btn-default'>Add new part number</button>
+</form>
+
 </div>
 
 
