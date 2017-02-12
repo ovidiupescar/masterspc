@@ -15,7 +15,7 @@
  */
 class Referinte_model extends OP_model {
     
-    const DB_TABLE = 'referinte'; //test
+    const DB_TABLE = 'referinte';
     const DB_TABLE_PK = 'partNo';
     
     /**
